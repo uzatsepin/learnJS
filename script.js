@@ -1,13 +1,21 @@
 "use strict";
 
-// const category = 'toys';
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// document.write(`https://someurl.com/${category}/5`);
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
 
-// const user = 'Ivan';
-// alert(`Привет, ${user}`);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+	b = prompt('На сколько оцените его?', ''),
+	c = prompt('Один из последних просмотренных фильмов?', ''),
+	d = prompt('На сколько оцените его?', '');
 
-const isChecked = true,
-	isClose = false;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(isChecked && isClose);
+console.log(personalMovieDB);
