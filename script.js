@@ -1,5 +1,7 @@
 "use strict";
 
+console.log('andrei');
+
 const personalMovieDB = {
 	count: 0,
 	movies: {},
